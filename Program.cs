@@ -12,6 +12,10 @@ namespace SnakeAndLadder
 
             SLGameUC1 GameUC1 = new SLGameUC1();
             GameUC1.Start_Game();
+
+            SLGameUC2.Start_Game();
+
+
         }
     }
 }
