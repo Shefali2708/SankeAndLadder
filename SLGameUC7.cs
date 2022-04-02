@@ -59,90 +59,63 @@ namespace SnakeAndLadder
                         case 2:
                             if (player1IsPlaying)
                             {
-
                                 if (Player1position + DieRolled <= Winning_Position)
                                 {
-
                                     Player1position += DieRolled;
                                     Console.WriteLine("Player 1 landed on a ladder");
-
                                 }
-
                             }
                             else
                             {
-
                                 if (Player2position + DieRolled <= Winning_Position)
                                 {
-
                                     Player2position += DieRolled;
                                     Console.WriteLine("Player 2 landed on a ladder");
-
                                 }
-
                             }
-
                             break;
 
                         case 3:
                             if (player1IsPlaying)
                             {
-
                                 Player1position -= DieRolled;
                                 player1IsPlaying = false;
 
                                 if (Player1position < 0)
                                 {
-
                                     Player1position = 0;
-
                                 }
-
                                 Console.WriteLine("Player 1 landed on a snake");
-
                             }
                             else
                             {
-
                                 Player2position -= DieRolled;
                                 player1IsPlaying = true;
 
                                 if (Player2position < 0)
                                 {
-
                                     Player2position = 0;
-
                                 }
-
                                 Console.WriteLine("Player 2 landed on a snake");
-
                             }
                             break;
                         default:
                             Console.WriteLine("Enter proper value");
                             break;
-
                     }
                     Console.WriteLine("Player 1 position  = " + Player1position);
                     Console.WriteLine("Player 2 position  = " + Player2position);
-
                 }
-
                 if (Player1position == 100)
                 {
-
                     Console.WriteLine("Player 1 won the game!");
-
                 }
                 else
                 {
-
                     Console.WriteLine("Player 2 won the game!");
-
                 }
                 Console.WriteLine("Dice was rolled " + dieRolledTimes + " to win the game");
             }
-
         }
     }
 }
