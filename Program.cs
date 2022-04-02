@@ -16,6 +16,9 @@ namespace SnakeAndLadder
             SLGameUC3.Start_Game();
 
             SLGameUC4.Start_Game();
+
+            SLGameUC5.Start_Game();
+            
         }
     }
 }
